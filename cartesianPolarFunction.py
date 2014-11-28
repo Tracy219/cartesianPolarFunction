@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 import numpy as np
+import matplotlib
+matplotlib.use("agg")
 import matplotlib.pyplot as plt
 
 x = np.linspace(-180, 180, 3000)
@@ -31,3 +33,4 @@ plt.legend(loc = "lower left")
 
 
 plt.show()
+plt.savefig("cartesianPolarFunction.pdf")
