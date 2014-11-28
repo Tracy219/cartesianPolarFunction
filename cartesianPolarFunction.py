@@ -17,6 +17,9 @@ plt.plot(x, y2, "g", label = "sine squared")
 plt.plot(x, y3, "b", label = "cosine")
 plt.legend(loc = "lower left")
 
+plt.xlabel("x", fontsize = 13)
+plt.ylabel("y", fontsize = 13)
+
 plt.xlim(-4, 4)
 plt.ylim(-1.0, 1.0)
 
@@ -31,6 +34,12 @@ plt.plot(x, y2, "g", label = "sine squared")
 plt.plot(x, y3, "b", label = "cosine")
 plt.legend(loc = "lower left")
 
+plt.xlabel("x", fontsize = 13)
+plt.ylabel("y", fontsize = 14)
+
+
+plt.subplots_adjust(wspace = 0.37)
+plt.suptitle("sine, sine squared, cosine function", fontsize = 19)
 
 plt.show()
-plt.savefig("cartesianPolarFunction.pdf")
+plt.savefig("cartesianPolarFunctionImprovement.pdf")
